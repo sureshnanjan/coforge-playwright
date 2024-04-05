@@ -1,5 +1,5 @@
 /**
- * This function is a simple adder 
+ * This function is a simple arithmetic adder 
  * @param a  First number to add
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
@@ -13,10 +13,10 @@ export function add (a: number, b: number): string {
 
  /**
  * This function is expected to return 100
- * @returns  - FIX THE CODE TO OBEY SPEC
+ * @returns  - 100 is returned always
  */
 export function exercise1():number{
-    return 0;
+    return 0; //FIX THE CODE TO OBEY SPEC
 }
 
 /**
@@ -47,8 +47,9 @@ export function exercise3(word:string):number{
  * @returns A value obeying the method contract
  */
 export function exercise4():1|2|3|4{
-    return 10; // FIX this so that it obey the signature
-    //return 1;
+    return 10; 
+    // FIX this so that it obeys the signature
+    
 }
 
 /**

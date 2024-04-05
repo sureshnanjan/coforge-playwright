@@ -26,7 +26,4 @@ describe("Evaluation Tests", () => {
       const actual = exercise5("result");
       assert.equal(actual,"tluser")
    });
-
-
-
 });
