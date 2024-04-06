@@ -17,6 +17,7 @@ export function add (a: number, b: number): number {
  */
 export function exercise1():number{
     return 100; //FIX THE CODE TO OBEY SPEC
+    return 100; //FIX THE CODE TO OBEY SPEC
 }
 
 /**
@@ -30,6 +31,7 @@ export function exercise2(prefix:string, suffix:string):string{
 
     // Implement code as per spec
     return prefix+"HELLO"+suffix;
+    return prefix+"HELLO"+suffix;
 
 }
 /**
@@ -38,6 +40,7 @@ export function exercise2(prefix:string, suffix:string):string{
  * @returns - The length of the word
  */
 export function exercise3(word:string):number{
+    return word.length;
     return word.length;
 }
 
@@ -57,8 +60,8 @@ export function exercise4():1|2|3|4{
  * @param input - The actual string passed to function
  * @returns  - The reversed string
  */
-export function exercise5(input: string): string {
-    const charArray = Array.from(input);
+export function exercise5(input:string):string{
+    const charArray=Array.from(input);
     charArray.reverse();
     return charArray.join("");
 }
@@ -66,4 +69,4 @@ export function exercise5(input: string): string {
 export function NoDocs(param1: number):
     number {
     return 0;
-}  
+} 
