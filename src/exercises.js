@@ -1,65 +1,63 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.exercise5 = exports.exercise4 = exports.exercise3 = exports.exercise2 = exports.exercise1 = exports.add = void 0;
 /**
- * This function is a simple arithmetic adder 
+ * This function is a simple arithmetic adder
  * @param a  First number to add
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
  */
-export function add (a: number, b: number): number {
-    return (a + b); 
+function add(a, b) {
+    return (a + b);
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
-    
- }
-
- /**
- * This function is expected to return 100
- * @returns  - 100 is returned always
- */
-export function exercise1():number{
+}
+exports.add = add;
+/**
+* This function is expected to return 100
+* @returns  - 100 is returned always
+*/
+function exercise1() {
     return 100; //FIX THE CODE TO OBEY SPEC
 }
-
+exports.exercise1 = exercise1;
 /**
- * This method will apply the prefix and suffix to the word 
+ * This method will apply the prefix and suffix to the word
  * HELLO and send back the results
  * @param prefix - Appears before HELLO
  * @param suffix  - Appears after HELLO
- * @returns 
+ * @returns
  */
-export function exercise2(prefix:string, suffix:string):string{
-
+function exercise2(prefix, suffix) {
     // Implement code as per spec
-
-    return prefix+'HELLO'+suffix;
-
+    return prefix + 'HELLO' + suffix;
 }
+exports.exercise2 = exercise2;
 /**
  * This function returns the length of the word passed as the argument
  * @param word - The input word for which length is needed
  * @returns - The length of the word
  */
-export function exercise3(word:string):number{
+function exercise3(word) {
     return word.length;
 }
-
+exports.exercise3 = exercise3;
 /**
- * This method is supposed to return a value as per the 
+ * This method is supposed to return a value as per the
  * method signature declaration
  * @returns A value obeying the method contract
  */
-export function exercise4():1|2|3|4{
-    return 4; 
+function exercise4() {
+    return 4;
     // FIX this so that it obeys the signature
-    
 }
-
+exports.exercise4 = exercise4;
 /**
  * This function returns the reversed version of the input
  * @param input - The actual string passed to function
  * @returns  - The reversed string
  */
-export function exercise5(input:string):string{
-     
+function exercise5(input) {
     // var newString = "";
     // for (var i = input.length - 1; i >= 0; i--) {
     //     newString += input[i];
@@ -67,3 +65,4 @@ export function exercise5(input:string):string{
     // return newString;
     return input.split("").reverse().join("");
 }
+exports.exercise5 = exercise5;
