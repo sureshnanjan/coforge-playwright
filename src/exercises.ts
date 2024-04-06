@@ -16,7 +16,7 @@ export function add (a: number, b: number): number {
  * @returns  - 100 is returned always
  */
 export function exercise1():number{
-    return 0; //FIX THE CODE TO OBEY SPEC
+    return 100; //FIX THE CODE TO OBEY SPEC
 }
 
 /**
@@ -29,7 +29,7 @@ export function exercise1():number{
 export function exercise2(prefix:string, suffix:string):string{
 
     // Implement code as per spec
-    return "";
+    return prefix+"HELLO"+suffix;
 
 }
 /**
@@ -38,7 +38,7 @@ export function exercise2(prefix:string, suffix:string):string{
  * @returns - The length of the word
  */
 export function exercise3(word:string):number{
-    return 0;
+    return word.length;
 }
 
 /**
@@ -58,5 +58,5 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-    return "";
+    return input.split("").reverse().join("");
 }
