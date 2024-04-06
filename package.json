@@ -16,5 +16,9 @@
     "chai": "^4.4.1",
     "mocha": "^10.4.0",
     "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.5"
   }
 }
