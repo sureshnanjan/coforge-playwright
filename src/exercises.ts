@@ -48,7 +48,11 @@ export function exercise3(word:string):number{
  * @returns A value obeying the method contract
  */
 export function exercise4():1|2|3|4{
+<<<<<<< HEAD
     return 4; 
+=======
+    return 1; 
+>>>>>>> suresh-trainer
     // FIX this so that it obeys the signature
     
 }
