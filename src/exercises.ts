@@ -4,8 +4,8 @@
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
  */
-export function add (a: number, b: number): number {
-    return (a + b); 
+export function add (a: number, b: number): string {
+    return (a + b).toString(); 
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
     
@@ -29,7 +29,7 @@ export function exercise1():number{
 export function exercise2(prefix:string, suffix:string):string{
 
     // Implement code as per spec
-    return "prefix +'HELLO'+suffix";
+    return "";
 
 }
 /**
@@ -47,7 +47,7 @@ export function exercise3(word:string):number{
  * @returns A value obeying the method contract
  */
 export function exercise4():1|2|3|4{
-    return 4; 
+    return 10; 
     // FIX this so that it obeys the signature
     
 }
