@@ -58,5 +58,9 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-    return "";
-}
+    return "";}
+
+ export function NoDocs(param1:number):
+ number{
+    return 0;
+ }   
