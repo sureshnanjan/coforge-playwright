@@ -15,3 +15,16 @@ const test_1 = require("@playwright/test");
     // Expect a title "to contain" a substring.
     yield (0, test_1.expect)(page).toHaveTitle('The Internet');
 }));
+(0, test_1.test)('Home Page Has 44 Examples', (_b) => __awaiter(void 0, [_b], void 0, function* ({ page }) {
+    yield page.goto('https://the-internet.herokuapp.com/');
+    yield (0, test_1.expect)(page.locator('li')).toHaveCount(46);
+}));
+(0, test_1.test)('Heading and SubheadIng Matches', (_c) => __awaiter(void 0, [_c], void 0, function* ({ page }) {
+    yield page.goto('https://the-internet.herokuapp.com/');
+    yield page.getByRole('heading', { name: 'Welcome to the-internet' }).click({
+        button: 'right'
+    });
+    yield page.getByRole('heading', { name: 'Welcome to the-internet' }).click({
+        button: 'right'
+    });
+}));
