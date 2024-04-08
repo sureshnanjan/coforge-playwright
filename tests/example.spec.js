@@ -14,6 +14,7 @@ const test_1 = require("@playwright/test");
     yield page.goto('https://the-internet.herokuapp.com/');
     // Expect a title "to contain" a substring.
     yield (0, test_1.expect)(page).toHaveTitle('The Internet');
+<<<<<<< HEAD
     (0, test_1.test)('TitleandsubTitle', (_b) => __awaiter(void 0, [_b], void 0, function* ({ page }) {
         yield page.goto('https://the-internet.herokuapp.com/');
         yield (0, test_1.expect)(page.getByRole('heading', { name: 'Welcome to the-internet' })).toContainText("Welcome to the-internet");
@@ -28,4 +29,19 @@ const test_1 = require("@playwright/test");
         yield (0, test_1.expect)(page.getByRole('heading', { name: 'Available Examples' })).toHaveText('Available Examples');
         //console.assert(tit1,"true");
     }));
+=======
+}));
+(0, test_1.test)('Home Page Has 44 Examples', (_b) => __awaiter(void 0, [_b], void 0, function* ({ page }) {
+    yield page.goto('https://the-internet.herokuapp.com/');
+    yield (0, test_1.expect)(page.locator('li')).toHaveCount(46);
+}));
+(0, test_1.test)('Heading and SubheadIng Matches', (_c) => __awaiter(void 0, [_c], void 0, function* ({ page }) {
+    yield page.goto('https://the-internet.herokuapp.com/');
+    yield page.getByRole('heading', { name: 'Welcome to the-internet' }).click({
+        button: 'right'
+    });
+    yield page.getByRole('heading', { name: 'Welcome to the-internet' }).click({
+        button: 'right'
+    });
+>>>>>>> suresh-trainer
 }));

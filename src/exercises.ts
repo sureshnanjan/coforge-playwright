@@ -4,8 +4,8 @@
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
  */
-    export function add (a: number, b: number): number {
-    return (a + b); 
+export function add (a: number, b: number): string {
+    return (a + b).toString(); 
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
     
@@ -58,5 +58,9 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-    return "";
-}
+    return "";}
+
+ export function NoDocs(param1:number):
+ number{
+    return 0;
+ }   
