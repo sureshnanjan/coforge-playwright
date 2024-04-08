@@ -57,8 +57,13 @@ export function exercise4():1|2|3|4{
  * @param input - The actual string passed to function
  * @returns  - The reversed string
  */
-export function exercise5(input:string):string{
-    const charArray=Array.from(input);
+export function exercise5(input: string): string {
+    const charArray = Array.from(input);
     charArray.reverse();
     return charArray.join("");
 }
+
+export function NoDocs(param1: number):
+    number {
+    return 0;
+}  

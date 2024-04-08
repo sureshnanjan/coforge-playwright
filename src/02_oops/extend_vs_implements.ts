@@ -11,6 +11,9 @@ class Human {
     }
 }
 
+//class MyString implements number{}
+// class MyString
+
 class HumanReplica{
     name:string;
     gender:string;

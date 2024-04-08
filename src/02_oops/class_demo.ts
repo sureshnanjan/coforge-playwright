@@ -93,7 +93,7 @@ var myPet: Pet = "Test"
 myPet = "NOT"
 
 var instSMT:SomeTHing = "";
-instSMT = tesla.
+//instSMT = tesla.
 
 
 
@@ -120,16 +120,18 @@ console.table();
 // Duck Typing - JS Python - Weakly Typed Languages
 
 function PrintCarDetail(carInstance:Car){
-    console.log(carInstance.model);
+    //console.log(carInstance.model);
     console.log(carInstance.price);
     console.log(carInstance.drive());
 
 
 }
 
+/*
 tesla.
 
-PrintCarDetail(tesla);
+//PrintCarDetail(tesla);
 PrintCarDetail(ford);
 PrintCarDetail(somethingLikeACar);
 PrintCarDetail(myTV);
+*/
