@@ -59,11 +59,5 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-     
-    // var newString = "";
-    // for (var i = input.length - 1; i >= 0; i--) {
-    //     newString += input[i];
-    // }
-    // return newString;
-    return input.split("").reverse().join("");
+    return "";
 }

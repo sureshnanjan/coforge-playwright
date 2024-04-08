@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "tsc & mocha target\\test",
     "build": "tsc",
     "pltest":"playwright test"
   },
