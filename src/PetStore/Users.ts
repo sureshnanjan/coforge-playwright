@@ -32,5 +32,5 @@ class users {
 
 }
 
-const usersInfo = new users(10, 'amojes93', 'mojes', 'Amudapaku', 'amudapakumojes93@gmail.com', 'moji@01', '8500028007', 3);
+const usersInfo = new users(10, 'amojes93', 'mojes', 'Amudapaku', 'amudapakumojes93@gmail.com', 'moji@01', '8500028008', 3);
 usersInfo.details();
