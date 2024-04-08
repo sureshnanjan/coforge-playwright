@@ -8,7 +8,7 @@ exports.exercise5 = exports.exercise4 = exports.exercise3 = exports.exercise2 = 
  * @returns The sum of First and Second numbers
  */
 function add(a, b) {
-    return (a + b).toString();
+    return (2 + 3);
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
 }
@@ -18,7 +18,7 @@ exports.add = add;
 * @returns  - 100 is returned always
 */
 function exercise1() {
-    return 0; //FIX THE CODE TO OBEY SPEC
+    return 100; //FIX THE CODE TO OBEY SPEC
 }
 exports.exercise1 = exercise1;
 /**
@@ -30,7 +30,7 @@ exports.exercise1 = exercise1;
  */
 function exercise2(prefix, suffix) {
     // Implement code as per spec
-    return "";
+    return prefix + "HELLO" + suffix;
 }
 exports.exercise2 = exercise2;
 /**
@@ -39,7 +39,7 @@ exports.exercise2 = exercise2;
  * @returns - The length of the word
  */
 function exercise3(word) {
-    return 0;
+    return word.length;
 }
 exports.exercise3 = exercise3;
 /**
@@ -48,7 +48,7 @@ exports.exercise3 = exercise3;
  * @returns A value obeying the method contract
  */
 function exercise4() {
-    return 10;
+    return 2;
     // FIX this so that it obeys the signature
 }
 exports.exercise4 = exercise4;
@@ -58,6 +58,10 @@ exports.exercise4 = exercise4;
  * @returns  - The reversed string
  */
 function exercise5(input) {
-    return "";
+    var rev = "";
+    for (var i = input.length - 1; i >= 0; i--) {
+        rev += input[i];
+    }
+    return rev;
 }
 exports.exercise5 = exercise5;

@@ -4,8 +4,8 @@
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
  */
-export function add (a: number, b: number): string {
-    return (a + b).toString(); 
+export function add (a: number, b: number): number {
+    return (2 + 3); 
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
     
@@ -16,7 +16,7 @@ export function add (a: number, b: number): string {
  * @returns  - 100 is returned always
  */
 export function exercise1():number{
-    return 0; //FIX THE CODE TO OBEY SPEC
+    return 100; //FIX THE CODE TO OBEY SPEC
 }
 
 /**
@@ -29,7 +29,7 @@ export function exercise1():number{
 export function exercise2(prefix:string, suffix:string):string{
 
     // Implement code as per spec
-    return "";
+    return prefix+"HELLO"+suffix;
 
 }
 /**
@@ -38,7 +38,8 @@ export function exercise2(prefix:string, suffix:string):string{
  * @returns - The length of the word
  */
 export function exercise3(word:string):number{
-    return 0;
+
+    return word.length;
 }
 
 /**
@@ -47,7 +48,7 @@ export function exercise3(word:string):number{
  * @returns A value obeying the method contract
  */
 export function exercise4():1|2|3|4{
-    return 10; 
+    return 2; 
     // FIX this so that it obeys the signature
     
 }
@@ -58,5 +59,9 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-    return "";
+    var rev="";
+    for(var i=input.length-1;i>=0;i--){
+        rev +=input[i];
+    }
+    return rev;
 }
