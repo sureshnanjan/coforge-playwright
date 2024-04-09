@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // tests/calculator.spec.tx
 const chai_1 = require("chai");
-const exercises_1 = require("../src/exercises");
+const exercises_1 = require("../target/src/exercises");
 (0, chai_1.should)();
 describe("Evaluation Tests", () => {
     it("add method should return 5 when 2 is added to 3", () => {
