@@ -32,5 +32,5 @@ class order {
     }
 }
 
-const orderInfo=new order(1,101,5,'07-04-2024','Sucess',orderStatus.approved);
+const orderInfo=new order(1,101,5,'08-04-2024','Sucess',orderStatus.approved);
 orderInfo.orderDetails();

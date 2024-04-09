@@ -5,10 +5,7 @@
  * @returns The sum of First and Second numbers
  */
 export function add (a: number, b: number): number {
-    return (a + b); 
-    // TODO : FIX ERROR so that it returns a number
-    // NOT STRING
-    
+    return (a + b);  
  }
 
  /**
@@ -16,7 +13,7 @@ export function add (a: number, b: number): number {
  * @returns  - 100 is returned always
  */
 export function exercise1():number{
-    return 100; //FIX THE CODE TO OBEY SPEC
+    return 100;  
 }
 
 /**
@@ -26,10 +23,7 @@ export function exercise1():number{
  * @param suffix  - Appears after HELLO
  * @returns 
  */
-export function exercise2(prefix:string, suffix:string):string{
-
-    // Implement code as per spec
-
+export function exercise2(prefix:string, suffix:string):string{ 
     return prefix+'HELLO'+suffix;
 
 }
@@ -48,13 +42,8 @@ export function exercise3(word:string):number{
  * @returns A value obeying the method contract
  */
 export function exercise4():1|2|3|4{
-<<<<<<< HEAD
     return 4; 
-=======
-    return 1; 
->>>>>>> suresh-trainer
-    // FIX this so that it obeys the signature
-    
+     
 }
 
 /**
@@ -63,11 +52,5 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-     
-    // var newString = "";
-    // for (var i = input.length - 1; i >= 0; i--) {
-    //     newString += input[i];
-    // }
-    // return newString;
     return input.split("").reverse().join("");
 }

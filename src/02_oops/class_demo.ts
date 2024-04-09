@@ -1,4 +1,4 @@
-class Car {
+/*class Car {
     // Access Modifiers
     private model:string; 
     //private bolts: number; 
@@ -93,7 +93,7 @@ var myPet: Pet = "Test"
 myPet = "NOT"
 
 var instSMT:SomeTHing = "";
-instSMT = tesla.
+instSMT = tesla./*
 
 
 
@@ -116,7 +116,7 @@ console.table();
  * class SomeTYpe{} Instanceof class, 
  * or a base calss of this class
  * 
- */
+ 
 // Duck Typing - JS Python - Weakly Typed Languages
 
 function PrintCarDetail(carInstance:Car){
@@ -132,4 +132,4 @@ tesla.
 PrintCarDetail(tesla);
 PrintCarDetail(ford);
 PrintCarDetail(somethingLikeACar);
-PrintCarDetail(myTV);
+PrintCarDetail(myTV);*/
