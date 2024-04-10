@@ -1,6 +1,6 @@
 // tests/calculator.spec.tx
 import { assert, should } from "chai";
-import { add, exercise1,exercise2, exercise3, exercise4, exercise5 , NoDocs} from "../src/exercises"
+import { add, exercise1,exercise2, exercise3, exercise4, exercise5 } from "../src/exercises"
 should();
 describe("Evaluation Tests", () => {
       it("add method should return 5 when 2 is added to 3", () => {
