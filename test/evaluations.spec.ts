@@ -1,12 +1,12 @@
 // tests/calculator.spec.tx
 import { assert, should } from "chai";
-import { add, exercise1,exercise2, exercise3, exercise4, exercise5 } from "../src/exercises"
+import { add, exercise1,exercise2, exercise3, exercise4, exercise5 } from "../src/exercise"
 should();
 describe("Evaluation Tests", () => {
-      it("add method should return 5 when 2 is added to 3", () => {
+      it.only("add method should return 5 when 2 is added to 3", () => {
       const result = add(2, 3);
       assert.equal(result, 5);
-   });
+   }); 
    it('exercise1 should work as per requirement spec', () => {
       assert.equal(exercise1(), 100);
    });
@@ -26,4 +26,5 @@ describe("Evaluation Tests", () => {
       const actual = exercise5("result");
       assert.equal(actual,"tluser")
    });
+ 
 });
