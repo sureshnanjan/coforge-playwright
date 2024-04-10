@@ -3,12 +3,12 @@
  */
 
 const _checkPromise = new Promise(function(pass, fail){
-    let a = 'venk5522';
-    let b= 'venk1236';
-    if(a === b){
-        pass(`Both variables values are matching ${a} == ${b}`)
+    let x = 'venk5522';
+    let y= 'venk1236';
+    if(x === y){
+        pass(`Both variables values are matching ${x} == ${y}`);
     }else{
-        fail(`Both variables values are not matching ${a} !== ${b}`)
+        fail(`Both variables values are not matching ${x} !== ${x}`);
     }
     })
 
