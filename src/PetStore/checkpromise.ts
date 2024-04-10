@@ -4,7 +4,7 @@
 
 const _checkPromise = new Promise(function(pass, fail){
     let a = 'venk5522';
-    let b= 'venk1234';
+    let b= 'venk1236';
     if(a === b){
         pass(`Both variables values are matching ${a} == ${b}`)
     }else{
@@ -14,7 +14,7 @@ const _checkPromise = new Promise(function(pass, fail){
 
     _checkPromise
     .then(function (pass) {
-        
+
          console.log(pass);
     }, 
     function (fail) {
