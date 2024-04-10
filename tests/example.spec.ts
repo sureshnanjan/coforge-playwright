@@ -8,7 +8,7 @@ test('has title', async ({ page }) => {
 });
 
 test('Home Page Has 44 Examples', async ({ page }) => {
-  await page.goto('https://the-internet.herokuapp.com/');
+  await page.goto('https://the-internet.herokuapp.com/')
   await expect(page.locator('li')).toHaveCount(46);
 });
 
