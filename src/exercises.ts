@@ -4,19 +4,19 @@
  * @param b  Second number to add
  * @returns The sum of First and Second numbers
  */
-export function add (a: number, b: number): number {
-    return (a + b); 
+export function add(a: number, b: number): number {
+    return (a + b);
     // TODO : FIX ERROR so that it returns a number
     // NOT STRING
-    
- }
 
- /**
- * This function is expected to return 100
- * @returns  - 100 is returned always
- */
-export function exercise1():number{
-    return 0; //FIX THE CODE TO OBEY SPEC
+}
+
+/**
+* This function is expected to return 100
+* @returns  - 100 is returned always
+*/
+export function exercise1(): number {
+    return 100; //FIX THE CODE TO OBEY SPEC
 }
 
 /**
@@ -26,10 +26,10 @@ export function exercise1():number{
  * @param suffix  - Appears after HELLO
  * @returns 
  */
-export function exercise2(prefix:string, suffix:string):string{
+export function exercise2(prefix: string, suffix: string): string {
 
     // Implement code as per spec
-    return "";
+    return prefix + "HELLO" + suffix;
 
 }
 /**
@@ -37,8 +37,8 @@ export function exercise2(prefix:string, suffix:string):string{
  * @param word - The input word for which length is needed
  * @returns - The length of the word
  */
-export function exercise3(word:string):number{
-    return 0;
+export function exercise3(word: string): number {
+    return word.length;
 }
 
 /**
@@ -46,10 +46,10 @@ export function exercise3(word:string):number{
  * method signature declaration
  * @returns A value obeying the method contract
  */
-export function exercise4():1|2|3|4{
-    return 1; 
+export function exercise4(): 1 | 2 | 3 | 4 {
+    return 1;
     // FIX this so that it obeys the signature
-    
+
 }
 
 /**
@@ -57,10 +57,7 @@ export function exercise4():1|2|3|4{
  * @param input - The actual string passed to function
  * @returns  - The reversed string
  */
-export function exercise5(input:string):string{
-    return "";}
+export function exercise5(input: string): string {
+    return input.split("").reverse().join("");
+}
 
- export function NoDocs(param1:number):
- number{
-    return 0;
- }   

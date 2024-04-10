@@ -61,7 +61,7 @@ var somethins = {
 name:"TestUser", 
 age:40,
 occupation:"Drivre",
-speak: () =>{},
+speak: () =>{ },
 eat: ()=>{}
 }
 aperson = someTiger;
