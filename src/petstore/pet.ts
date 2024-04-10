@@ -28,4 +28,4 @@ class Order {
     }
 }
 const myOrder = new Order(1,10,2,"2024-04-08",OrderStatus.placed,true);
-console.log(myOrder);
+console.log(myOrder...);
