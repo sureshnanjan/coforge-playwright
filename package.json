@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "build": "tsc",
-    "pltest":"playwright test"
+    "pltest": "playwright test"
   },
   "keywords": [],
   "author": "",
