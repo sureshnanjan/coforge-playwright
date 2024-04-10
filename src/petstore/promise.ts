@@ -10,7 +10,7 @@ let promise = new Promise(function (resolve, reject) {
  
 promise.
     then(function () {
-        console.log("values x and y are equal");
+        console.log("values x and y are equal---");
     }).
     catch(function () {
         console.log("vaues x and y are not equal");
