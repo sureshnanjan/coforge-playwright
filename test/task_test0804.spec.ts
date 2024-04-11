@@ -1,6 +1,5 @@
 import { Category, PetDetails } from "../src/PetStore/task0804";
-import { expect } from "chai";
-
+ 
 describe("This Module Tests My Petstore ", function testcaseHandler(){
     it('Get Pet Details', () => {
         const category = new Category(100,'Dogs')
