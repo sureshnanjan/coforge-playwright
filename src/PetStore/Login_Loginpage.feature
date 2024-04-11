@@ -1,7 +1,7 @@
 Feature: User Login;
-#As a register user 
-#user want to login the system 
-#so that can access my system
+# As a register user 
+# user want to login the system 
+# so that can access my system
 
   @Flipkart-positive
   Scenario: Successful login with the valid credentials;
