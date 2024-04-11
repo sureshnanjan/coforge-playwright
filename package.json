@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tsc & mocha target\\test",
     "build": "tsc",
-    "pltest":"playwright test"
+    "pltest": "playwright test"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "@types/chai": "^4.3.14",
     "@types/mocha": "^10.0.6",
     "chai": "^4.4.1",
+    "cucumber": "^6.0.7",
     "mocha": "^10.4.0",
     "typescript": "^5.4.3"
   },
