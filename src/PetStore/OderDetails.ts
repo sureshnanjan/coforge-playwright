@@ -1,19 +1,22 @@
-enum orderStatus {
+enum orderdetails {
     placed = "Placed",
     approved = "Approved",
     delivered = "Delivered"
 }
 
-class order {
+class orderDetails 
+{
 
     id: number;
     petId: number;
     quantity: number;
     shipDate: string;
     status: string;
-    OrderStatus: orderStatus;
+    OrderStatus: orderdetails;
 
-    constructor(id: number, petId: number, quantity: number, shipDate: string, status: string, OrderStatus: orderStatus) {
+    constructor(id: number, petId: number, quantity: number, shipDate: string, status: string, OrderStatus: orderdetails)
+    
+    {
         this.id = id;
         this.petId = petId;
         this.quantity = quantity;
@@ -22,7 +25,8 @@ class order {
         this.OrderStatus = OrderStatus;
     }
 
-    orderDetails(){
+    orderDetails()
+    {
         console.log(this.id);
         console.log(this.petId);
         console.log(this.quantity);
@@ -32,5 +36,5 @@ class order {
     }
 }
 
-const orderInfo=new order(1,101,5,'08-04-2024','Sucess',orderStatus.approved);
+const orderInfo=new orderDetails(1,101,5,'08-04-2024','Sucess',orderdetails.approved);
 orderInfo.orderDetails();
