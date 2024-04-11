@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "build": "tsc",
-    "pltest":"playwright test"
+    "pltest": "playwright test"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.43.0",
-    "@types/node": "^20.12.5"
+    "@types/node": "^20.12.5",
+    "cucumber": "^6.0.7"
   }
 }
