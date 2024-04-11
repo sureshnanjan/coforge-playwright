@@ -5,10 +5,3 @@ Scenario : User creates new project
   And user can able to enter details in fill form
   Then new project should appear in the list of projects
  
-Defect1: Unable to delete the project 
-Scenario : User attempts to delete the project
-Given the user is logged 
-When user selects the projects 
-And click on delete project
-And verify project has deleted message
-Then project should not be deleted and throws an error
