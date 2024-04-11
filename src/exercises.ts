@@ -38,8 +38,9 @@ export function exercise2(prefix:string, suffix:string):string{
  * @returns - The length of the word
  */
 export function exercise3(word:string):number{
-    return 0;
-}
+    
+    return word.length;
+    }
 
 /**
  * This method is supposed to return a value as per the 
@@ -58,5 +59,9 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
+    var rev="";
+    for(var i=input.length-1;i>=0;i--){
+        rev+=input[i];
+    }
     return "";
 }
