@@ -68,3 +68,21 @@ aperson = someTiger;
 
 console.log(aperson.name);
 
+class NewClass implements Person{
+    name: string;
+    age: number;
+    constructor(){
+        this.name = "";
+        this.age = 35;
+    }
+    eat(): void {
+        console.log("A diffrent way of Eating");
+    }
+    speak(): void {
+        console.log("A different way of speaking");
+    }
+    newBehavior(): void{
+        console.log("This is new in New Class")
+    }
+}
+
