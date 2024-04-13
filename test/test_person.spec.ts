@@ -6,8 +6,8 @@ describe("This Module Tests My Petstore ", function testcaseHandler(){
         // Arrange Act Assert
         // Data name , age
         const nameDate = "suresh";
-        const ageData = 48;
-        const expectedData = "suresh";
+        const ageData = 48; // 32 , 64 
+        const expectedData = "suresh"; // DBCs
         const aut = new Person("suresh",48);
         // Act
         const actual = aut.name;
