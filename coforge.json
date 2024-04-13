@@ -1,0 +1,12 @@
+{
+    "use": "qa",
+    "environments":{
+        "qa":{
+            "browser":"chrome",
+            "device":"Desktop Chrome",
+            "url":"https://the-internet.herokuapp.com/"
+        },
+        "prod":{}
+    }
+    
+}

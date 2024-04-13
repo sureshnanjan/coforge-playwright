@@ -6,7 +6,7 @@
   "scripts": {
     "test": "tsc & mocha target\\test",
     "build": "tsc",
-    "pltest":"playwright test"
+    "pltest": "playwright test --headed --project=chromium"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,9 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^10.4.0",
     "@playwright/test": "^1.43.0",
-    "@types/node": "^20.12.5"
+    "@types/node": "^20.12.5",
+    "ts-node": "^10.9.2"
   }
 }
