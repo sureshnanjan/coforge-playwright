@@ -3,6 +3,7 @@ class PolymorphicA {
     print(){    
         console.log('I am class A')  
     }
+
     /*
     static polymorphism is not supported
     print(a:string):string{
