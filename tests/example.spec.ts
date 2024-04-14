@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { HerokuHomePage } from '../src/pages/heroku_home_page';
-
+import { Disapperelement } from '../src/pages/heroku_disapperelement_page'
+import{RedirectLinks}  from  '../src/pages/heroku_redirected_link_page'
 
 test('has title', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
@@ -58,6 +59,20 @@ test.describe("Heroku App Scenarios",()=>{
 
 })
 test("Test Paragrapg",()=>{})
+test("Verifying Disapper Elements",async ({page})=>{
+const de=new Disapperelement(page);
+await de.goToPage("https://the-internet.herokuapp.com/disappearing_elements");
+const  Present_element= await de.getelement();
+await de.reload();
+const Disappered_element= await de.getelement();
+
+})
+test("Verify Link is redirected",async ({page})=>{
+const rd=new RedirectLinks(page);
+await rd.goToPage("https://the-internet.herokuapp.com/redirector");
+const title=await rd.verifyredirectionpagetitle();
+expect(title).toEqual('Redirection')
 
 
 
+})
