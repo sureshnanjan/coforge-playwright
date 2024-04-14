@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tsc & mocha target\\test",
     "build": "tsc",
-    "pltest": "playwright test --headed --project=chromium"
+    "pltest": "playwright test",
+    "bddtest": "cucumber-js"
   },
   "keywords": [],
   "author": "",
