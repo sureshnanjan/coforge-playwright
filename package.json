@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "tsc & mocha target\\test",
     "build": "tsc",
+<<<<<<< HEAD
     "pltest": "playwright test"
+=======
+    "pltest": "playwright test --headed --project=chromium"
+>>>>>>> suresh-trainer
   },
   "keywords": [],
   "author": "",
@@ -19,8 +23,13 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^10.4.0",
     "@playwright/test": "^1.43.0",
     "@types/node": "^20.12.5",
+<<<<<<< HEAD
     "cucumber": "^6.0.7"
+=======
+    "ts-node": "^10.9.2"
+>>>>>>> suresh-trainer
   }
 }
