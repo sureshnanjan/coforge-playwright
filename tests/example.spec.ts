@@ -40,5 +40,3 @@ test('Heading and SubheadIng Matches', async ({ page }) => {
     button: 'right'
   });
 });
-
-
