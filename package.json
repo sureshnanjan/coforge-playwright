@@ -6,7 +6,12 @@
   "scripts": {
     "test": "tsc & mocha target\\test",
     "build": "tsc",
+<<<<<<< HEAD
     "pltest": "playwright test --headed --project=chromium"
+=======
+    "pltest": "playwright test",
+    "bddtest": "cucumber-js"
+>>>>>>> suresh-trainer
   },
   "keywords": [],
   "author": "",

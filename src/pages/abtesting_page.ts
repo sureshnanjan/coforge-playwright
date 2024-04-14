@@ -4,7 +4,11 @@ import { Page } from "@playwright/test";
  * 
  */
 export class ABTestingPage{
+<<<<<<< HEAD
     readonly Page:Page
+=======
+    readonly page:Page
+>>>>>>> suresh-trainer
     /**
      * 
      * @returns 

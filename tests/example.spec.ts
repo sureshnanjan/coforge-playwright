@@ -50,7 +50,11 @@ test.describe("Heroku App Scenarios",()=>{
     expect(actual).toEqual('The Internet');
   } )
 
+<<<<<<< HEAD
   test.only("Page Heading Matches", async ({page})=>{
+=======
+  test("Page Heading Matches", async ({page})=>{
+>>>>>>> suresh-trainer
     /// AAA
     const hp = await AppUtil.createAppInstance(undefined);
     const expected = "Welcome to the-internet";
