@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { HerokuHomePage } from '../src/pages/heroku_home_page';
+import { AppUtil } from '../src/utilities/app_util';
+import { ABTestingPage } from '../src/pages/abtesting_page';
+import { Editor } from '../src/pages/wsiwgs_editor_page';
+import exp from 'constants';
 
 
 test('has title', async ({ page }) => {
@@ -41,23 +45,60 @@ test("Test heading",()=>{
 test.describe("Heroku App Scenarios",()=>{
   test("Page Objects Test", async ({page})=>{
     const hp = new HerokuHomePage(page);
-    await hp.goToPage("https://the-internet.herokuapp.com/")
+    await hp.goToHomePage();
     const actual = await hp.getTitle()
     expect(actual).toEqual('The Internet');
   } )
 
   test.only("Page Heading Matches", async ({page})=>{
     /// AAA
-    const hp = new HerokuHomePage(page);
+    const hp = await AppUtil.createAppInstance(undefined);
     const expected = "Welcome to the-internet";
-    await hp.goToPage("https://the-internet.herokuapp.com/")
-    const actualHeading = await hp.getHeading();
+    await hp.goToHomePage();
+    const actualHeading = await hp.getPageHeading();
     expect(actualHeading).toEqual(expected);
   });
 
 
 })
-test("Test Paragrapg",()=>{})
+test("AB Testing returns random page",()=>{
+  const myabtestPage = new ABTestingPage();
+  const expected = "AB Variattion1";
+  const actual = myabtestPage.getHeading();
+  expect(actual).toEqual(expected);
+})
 
+test("AB Testing returns exact page when cookie is added",()=>{
+  const myabtestPage = new ABTestingPage();
+  myabtestPage.disableABTesting();
+  const expected = "No A/B Test";
+  const actual = myabtestPage.getHeading();
+  expect(actual).toEqual(expected);
+})
+
+test("Editor input text works OK",()=>{
+  // Arrange
+ const app:Editor = new Editor();
+ const inputtext:string = "This is what i typed";
+ app.textType(inputtext); 
+ // Act
+ const result = app.getTextFromEditor();
+
+ expect(inputtext).toEqual(result);
+})
+
+test("Editor align Left text works OK",()=>{
+  // Arrange
+ const app:Editor = new Editor();
+ const inputtext:string = "This is what i typed";
+ app.textType(inputtext); 
+ app.alignLeft();
+ // Act
+ const result = app.getTextFromEditor();
+ const align = app.getCurrentalignment();
+
+ expect(inputtext).toEqual(result);
+ expect(align).toEqual("Left")
+})
 
 
