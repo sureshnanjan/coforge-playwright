@@ -4,7 +4,7 @@ import { Page } from "@playwright/test";
  * 
  */
 export class ABTestingPage{
-    readonly page:Page
+    readonly Page:Page
     /**
      * 
      * @returns 
