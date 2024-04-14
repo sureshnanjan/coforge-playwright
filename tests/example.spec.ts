@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { AbTestPage } from '../src/pages/heroku_AB_test_page';
 
 test('has title', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
@@ -22,4 +23,9 @@ test('Heading and SubheadIng Matches', async ({ page }) => {
   });
 });
 
+test ('AB Test Page Title is Correct,',()=>{
+  const sa = new AbTestPage();
+  const expected 
+
+})
 
