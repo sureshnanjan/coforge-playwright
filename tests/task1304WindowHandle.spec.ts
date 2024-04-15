@@ -8,7 +8,7 @@ const testData ={
 test.describe("Heroku App - Multiple window Handle",()=>{
     test("Multiple window Handle - Redirect to new window", async ({page})=>{
       const hp = new MultipleWindowHandlePage(page);
-      await hp.open(testData.URL);
+      await hp.launchAppUrl(testData.URL);
       await hp.clickLink();
       await page.waitForLoadState();
       await hp.switchToNewWindow()
