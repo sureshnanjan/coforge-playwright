@@ -12,7 +12,7 @@ import { promises } from 'dns';
         this.title="";
     }
     async goToPage(url:string){
-        return  this.page?.goto(url);
+        return  this.page?.goto("https://the-internet.herokuapp.com/slow");
     }
     async getTitle():Promise<string|undefined>{
      
