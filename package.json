@@ -7,9 +7,14 @@
     "test": "tsc & mocha target\\test",
     "build": "tsc",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "pltest": "playwright test"
 =======
     "pltest": "playwright test --headed --project=chromium"
+>>>>>>> suresh-trainer
+=======
+    "pltest": "playwright test",
+    "bddtest": "cucumber-js"
 >>>>>>> suresh-trainer
   },
   "keywords": [],

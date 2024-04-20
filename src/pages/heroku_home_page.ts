@@ -10,14 +10,10 @@ export class HerokuHomePage extends HerokuApp{
      */
     constructor(argpage: Page | undefined) {
         super(argpage);
-        this.title = "";
-        this.subtitle = "";
+        this.title = "h1";
+        this.subtitle = "h2";
 
         
-    }
-
-    async goToPage(url:string){
-        return  this.page?.goto(url);
     }
 
     async getTitle():Promise<string|undefined>{
@@ -29,7 +25,7 @@ export class HerokuHomePage extends HerokuApp{
     async getHeading():Promise<string|undefined|null>{
     
         //return this.page?.getByRole("heading").textContent();
-
+        console.table(this.page)
         return this.page?.locator('h1').textContent();
     }
 
