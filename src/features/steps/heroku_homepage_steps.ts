@@ -16,5 +16,5 @@ When('I check title', async function () {
     actualTitle = await page.getPageHeading();
   });
 Then('I have contents', async function () {
-    expect(actualTitle).to.be.eq("Welcome to the-internet NOT")
+    expect(actualTitle).to.be.eq("Welcome to the-internet")
 });

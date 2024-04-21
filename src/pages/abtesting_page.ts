@@ -4,14 +4,23 @@ import { Page } from "@playwright/test";
  * 
  */
 export class ABTestingPage{
-    readonly page:Page
+    readonly page:any
+    /**
+     *
+     */
+    constructor() {
+        //super();
+        this.page = undefined
+        
+    }
+
     /**
      * 
      * @returns 
      */
     getHeading():Promise<null|string>{
         // return the heading
-        return "";
+        //return "";
         // #content > div > h3 - CSS Selector
         // //*[@id="content"]/div/h3 = XPath
         // ARIA Roles 

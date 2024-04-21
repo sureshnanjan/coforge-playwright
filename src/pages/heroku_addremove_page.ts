@@ -8,7 +8,7 @@ export class AddRemove{
     remove_element():void{}
     getAvailableElements():string[]{
 
-        
+        return [""];
     }
     
 }
