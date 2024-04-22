@@ -43,7 +43,7 @@ class DependencyComplicated{
 
 class DependencySimplified{
 
-    constructor(network, filesys, spec){
+    constructor(network:any, filesys:any, spec:any){
     // network = new NetworkClsss();
     // fileSystem = new FileSystem();
     // specialDecice = new SpecialDecice();

@@ -23,5 +23,11 @@ console.log("Ended")
 // I have to change to PDF
 // Write to Disk
 
+var timeNow = Date.now();
+setInterval(()=>{
+    let now = Date.now();
+    console.log((now - timeNow)/1000)
+    timeNow = now
+},5000)
 
 
