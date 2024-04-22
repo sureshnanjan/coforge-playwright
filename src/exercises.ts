@@ -52,14 +52,14 @@ export function exercise4():1|2|3|4{
  * @returns  - The reversed string
  */
 export function exercise5(input:string):string{
-<<<<<<< HEAD
+
     return input.split("").reverse().join("");
 }
-=======
-    return "";}
+
+    
 
  export function NoDocs(param1:number):
  number{
     return 0;
  }   
->>>>>>> suresh-trainer
+
