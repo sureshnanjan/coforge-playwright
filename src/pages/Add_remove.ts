@@ -13,6 +13,7 @@ export class Add_removeele extends HerokuApp{
 
     getTitle():string{
         return ""
+        this.page?.title();
     }
 
     addElement(): void{
