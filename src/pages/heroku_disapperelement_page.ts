@@ -1,10 +1,6 @@
 import { Page, Locator } from "@playwright/test";
 import { HerokuApp } from "./herokuapp";
 export class DisappereElement  {  
-    constructor(argpage: Page | undefined) {
-        this.argpage=argpage;
-
-    }
 async goToPage(url:string){
         return  this.page?.goto(url);
     }   
@@ -19,7 +15,6 @@ async goToPage(url:string){
 
  }
    }    
-
 
 
 
